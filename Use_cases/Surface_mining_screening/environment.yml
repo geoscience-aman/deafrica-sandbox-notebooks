@@ -1,0 +1,47 @@
+name: mining-screening
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+
+  # Core geospatial
+  - gdal
+  - rasterio
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+
+  # xarray / dask stack
+  - xarray
+  - rioxarray
+  - dask
+  - distributed
+  - netcdf4
+  - bottleneck
+
+  # ODC (no datacube-core — no index outside the Sandbox)
+  - odc-stac
+  - odc-geo
+  - odc-algo
+
+  # STAC clients
+  - pystac-client
+  - planetary-computer
+
+  # Analysis
+  - numpy
+  - pandas
+  - scikit-image
+  - matplotlib
+
+  # Notebook + widgets
+  - jupyterlab
+  - ipywidgets
+  - ipyleaflet
+  - folium
+  - mapclassify
+
+  - pip
+  - pip:
+      - odc-ui
